@@ -32,6 +32,12 @@ public class QueryProcessor {
             }
             System.out.println(f);
             return f + "";
+        } else if (query.contains("what is")) {
+            String s = query.substring(17);
+            String[] stri = s.split(" plus ");
+            int one = Integer.parseInt(stri[0]);
+            int two = Integer.parseInt(stri[1]);
+            return one + two + "";
         }
         return "";
     }
