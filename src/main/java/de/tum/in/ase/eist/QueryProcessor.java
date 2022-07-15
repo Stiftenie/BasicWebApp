@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 @Service
 public class QueryProcessor {
 
-    
     public String process(String query) {
 		query = query.toLowerCase();
         if (query.contains("shakespeare")) {
@@ -13,9 +12,9 @@ public class QueryProcessor {
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
-           return "eist123";
+           return "Stephanie";
         } else { // TODO extend the programm here
-            return "eist123";
+            return "";
         }
     }
 }
