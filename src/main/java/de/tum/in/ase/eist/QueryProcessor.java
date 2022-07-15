@@ -33,12 +33,19 @@ public class QueryProcessor {
             System.out.println(f);
             return f + "";
         } else if (query.contains("what is")) {
-            String s = query.substring(17);
+            String s = query.substring(18);
             String[] stri = s.split(" plus ");
             int one = Integer.parseInt(stri[0]);
             int two = Integer.parseInt(stri[1]);
+            System.out.println(one + two);
             return one + two + "";
         }
         return "";
     }
+
+    public static void main(String[] args) {
+        QueryProcessor p = new QueryProcessor();
+        p.process("47fcaf10: what is 4 plus 9");
+    }
+
 }
