@@ -30,13 +30,9 @@ public class QueryProcessor {
                     f = in[i];
                 }
             }
+            System.out.println(f);
             return f + "";
         }
         return "";
-    }
-
-    public static void main(String[] args) {
-        QueryProcessor q = new QueryProcessor();
-        q.process("4b35d380: which of the following numbers is the largest: 47, 921, 98, 29");
     }
 }
